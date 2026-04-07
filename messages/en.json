@@ -1,0 +1,45 @@
+{
+  "Common": {
+    "home": "Home",
+    "products": "Products",
+    "projects": "Projects",
+    "about": "About Us",
+    "contact": "Contact Us",
+    "blog": "Blog",
+    "getQuote": "Get a Quote",
+    "learnMore": "Learn More",
+    "viewDetails": "View Details"
+  },
+  "Hero": {
+    "tagline": "15+ Years Experience • 50+ Countries • 500K+ Meters",
+    "title": "Smart Metering Solutions for a Connected World",
+    "subtitle": "STS Compliant Prepaid Meters • AMI Systems • Global Deployment. 15+ years of excellence in smart energy, water, and gas metering solutions.",
+    "exploreProducts": "Explore Products",
+    "getQuote": "Get a Quote"
+  },
+  "Stats": {
+    "yearsExperience": "Years Experience",
+    "countries": "Countries",
+    "metersDeployed": "Meters Deployed",
+    "continents": "Continents"
+  },
+  "Products": {
+    "title": "Our Products",
+    "subtitle": "Complete Metering Solutions",
+    "description": "From residential to industrial, we provide smart metering solutions for every application",
+    "energyMeters": "Energy Meters",
+    "energyMetersDesc": "STS Prepaid Electricity",
+    "waterMeters": "Water Meters",
+    "waterMetersDesc": "STS Prepaid & Ultrasonic",
+    "gasMeters": "Gas Meters",
+    "gasMetersDesc": "STS Prepaid Diaphragm"
+  },
+  "Footer": {
+    "companyName": "CalinS Meter",
+    "description": "Leading manufacturer of smart prepayment meters and AMI solutions. 15+ years of excellence in energy, water, and gas metering technologies.",
+    "products": "Products",
+    "company": "Company",
+    "contact": "Contact",
+    "copyright": "Copyright © 2026 CalinS Meter. All rights reserved."
+  }
+}
