@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - Mali Smart Metering Project | 50K+ STS Prepaid Meters Deployed",
+  description: "afmeter deployed 50K+ STS prepaid electricity and water meters across 12 regions in Mali, West Africa. A successful smart metering project improving revenue collection.",
+  keywords: "Mali smart meter project, Mali prepaid meter deployment, STS meter Mali, West Africa metering project, 50K meters Mali",
+};
 
 export default function MaliProjectPage() {
   return (

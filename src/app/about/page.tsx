@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - About Us | Smart Metering Solutions Manufacturer",
+  description: "Learn about afmeter, a leading smart metering solutions manufacturer with 15+ years experience. We provide STS prepaid meters, AMI systems to 50+ countries worldwide.",
+  keywords: "smart meter manufacturer, STS prepaid meter supplier, AMI system provider, about smart metering company, Africa meter supplier",
+};
 
 export default function AboutPage() {
   return (

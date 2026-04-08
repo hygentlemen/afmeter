@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - Nigeria Smart Metering Project | 200K+ STS Prepaid Meters Deployed",
+  description: "afmeter deployed 200K+ STS prepaid electricity meters across 36 states in Nigeria. One of the largest smart metering projects in West Africa. Learn more about this success story.",
+  keywords: "Nigeria smart meter project, Nigeria prepaid meter deployment, STS meter Nigeria, West Africa metering project, 200K meters Nigeria",
+};
 
 export default function NigeriaProjectPage() {
   return (

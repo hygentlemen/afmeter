@@ -1,5 +1,17 @@
 import Link from "next/link";
 import { HeroCarousel } from "@/components/sections/HeroCarousel";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - STS Prepaid Smart Meters | Energy, Water & Gas Meters",
+  description: "afmeter is a leading manufacturer of STS prepaid smart meters, AMI systems, and metering solutions. 15+ years experience, 500K+ meters deployed in 50+ countries worldwide.",
+  keywords: "STS prepaid meter, smart meter, energy meter, water meter, gas meter, AMI system, prepaid electricity meter, smart metering solutions, Africa meter supplier",
+  openGraph: {
+    title: "afmeter - STS Prepaid Smart Meters | Energy, Water & Gas Meters",
+    description: "Leading manufacturer of STS prepaid smart meters, AMI systems, and metering solutions. 15+ years experience, 500K+ meters deployed worldwide.",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (

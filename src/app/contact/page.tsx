@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - Contact Us | Get a Quote for Smart Meters",
+  description: "Contact afmeter for STS prepaid meters, AMI systems, and smart metering solutions. Get a quote for your project. Email: info@afmeter.com",
+  keywords: "contact smart meter supplier, get quote prepaid meter, AMI system inquiry, smart metering solutions contact",
+};
 
 export default function ContactPage() {
   return (

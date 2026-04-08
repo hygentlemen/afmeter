@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - Somaliland Smart Metering Project | 30K+ Meters in Extreme Conditions",
+  description: "afmeter deployed 30K+ STS prepaid electricity meters across 6 regions in Somaliland. Operating in extreme 45°C+ conditions with 99.5% uptime. Learn more about this challenging environment success story.",
+  keywords: "Somaliland smart meter project, Somaliland prepaid meter deployment, STS meter Somaliland, East Africa metering project, extreme temperature meter",
+};
 
 export default function SomalilandProjectPage() {
   return (

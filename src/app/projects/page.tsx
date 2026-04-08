@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - Our Projects | Global Smart Meter Deployment Success Stories",
+  description: "Explore afmeter's successful smart meter deployment projects worldwide. 500K+ meters deployed in Nigeria, Mali, Somaliland, Kenya, and 50+ countries.",
+  keywords: "smart meter project cases, prepaid meter deployment, AMI system implementation, Africa smart meter projects, Nigeria meter deployment, Mali meter project",
+};
 
 export default function ProjectsPage() {
   return (
