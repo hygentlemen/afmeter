@@ -30,7 +30,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-2">Email</h3>
-                    <p className="text-slate-600 text-lg">info@calinmeters.com</p>
+                    <p className="text-slate-600 text-lg">info@afmeter.com</p>
                   </div>
                 </div>
 
@@ -40,7 +40,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <h3 className="text-lg font-bold text-slate-900 mb-2">Phone</h3>
-                    <p className="text-slate-600 text-lg">+86 13713788753</p>
+                    <p className="text-slate-600 text-lg">+86 13562505474</p>
                   </div>
                 </div>
 
@@ -139,14 +139,14 @@ export default function ContactPage() {
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link 
-              href="mailto:info@calinmeters.com" 
+              href="mailto:info@afmeter.com" 
               className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 font-bold rounded-xl transition-all inline-flex items-center gap-3"
             >
               <span>📧</span>
               Email Us
             </Link>
             <Link 
-              href="tel:+8613713788753" 
+              href="tel:+8613562505474" 
               className="bg-white border-2 border-slate-200 hover:border-sky-500 text-slate-900 px-8 py-4 font-bold rounded-xl transition-all inline-flex items-center gap-3"
             >
               <span>📱</span>

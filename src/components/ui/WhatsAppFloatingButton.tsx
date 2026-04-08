@@ -3,7 +3,7 @@
 export function WhatsAppFloatingButton() {
   return (
     <a
-      href="https://wa.me/8613713788753"
+      href="https://wa.me/8613562505474"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed right-6 bottom-6 z-50 bg-[#25D366] hover:bg-[#20BD5F] w-14 h-14 rounded-full flex items-center justify-center shadow-lg transition-all hover:scale-110"

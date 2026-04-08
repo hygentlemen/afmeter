@@ -122,11 +122,11 @@ export default function Home() {
           <div className="flex gap-4 justify-center flex-wrap mb-12">
             <div className="bg-white/10 px-8 py-5 rounded-xl">
               <div className="text-sm opacity-80 mb-2">Email</div>
-              <div className="font-bold text-lg">info@calinmeters.com</div>
+              <div className="font-bold text-lg">info@afmeter.com</div>
             </div>
             <div className="bg-white/10 px-8 py-5 rounded-xl">
               <div className="text-sm opacity-80 mb-2">Phone</div>
-              <div className="font-bold text-lg">+86 13713788753</div>
+              <div className="font-bold text-lg">+86 13562505474</div>
             </div>
           </div>
           <div className="flex gap-4 justify-center flex-wrap">
