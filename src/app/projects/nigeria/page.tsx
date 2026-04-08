@@ -28,7 +28,7 @@ export default function NigeriaProjectPage() {
                 Nationwide Deployment in Nigeria
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                One of the largest smart metering deployments in West Africa, CalinS Meter supplied over 200,000 STS prepaid electricity meters to 11 Distribution Companies (DisCos) across 36 states in Nigeria.
+                One of the largest smart metering deployments in West Africa, afmeter supplied over 200,000 STS prepaid electricity meters to 11 Distribution Companies (DisCos) across 36 states in Nigeria.
               </p>
               <p className="text-slate-600 text-lg leading-relaxed mb-10">
                 This nationwide project addressed critical challenges in revenue collection, grid management, and customer satisfaction through advanced prepaid metering technology and comprehensive training programs.

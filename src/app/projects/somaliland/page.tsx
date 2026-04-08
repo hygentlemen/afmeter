@@ -28,7 +28,7 @@ export default function SomalilandProjectPage() {
                 Challenging Environment Success Story
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                CalinS Meter deployed over 30,000 STS prepaid electricity meters across 6 regions in Somaliland, one of the most challenging environments for smart metering infrastructure.
+                afmeter deployed over 30,000 STS prepaid electricity meters across 6 regions in Somaliland, one of the most challenging environments for smart metering infrastructure.
               </p>
               <p className="text-slate-600 text-lg leading-relaxed mb-10">
                 The project required meters capable of withstanding extreme temperatures (45°C+), dust, humidity, and unstable power conditions. Our robust design and rigorous testing ensured 99.5% uptime and reliable operation.

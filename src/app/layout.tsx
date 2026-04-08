@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "CalinS Meter - Smart Metering Solutions",
+  title: "afmeter - Smart Metering Solutions",
   description: "Leading manufacturer of STS prepaid energy meters, water meters and gas meters. 500,000+ meters deployed worldwide.",
   keywords: "STS prepaid meter, energy meter, water meter, gas meter, smart metering, AMI system",
 };

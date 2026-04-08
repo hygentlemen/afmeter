@@ -28,7 +28,7 @@ export default function MaliProjectPage() {
                 Successful Deployment in West Africa
               </h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                CalinS Meter successfully deployed over 50,000 STS prepaid electricity and water meters across 12 regions in Mali, West Africa.
+                afmeter successfully deployed over 50,000 STS prepaid electricity and water meters across 12 regions in Mali, West Africa.
               </p>
               <p className="text-slate-600 text-lg leading-relaxed mb-10">
                 This large-scale smart metering project significantly improved revenue collection and reduced non-revenue water for the national utility.

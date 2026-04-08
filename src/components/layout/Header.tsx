@@ -8,10 +8,10 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-white text-2xl font-bold">
-              CM
+              AM
             </div>
             <div>
-              <div className="text-xl font-bold text-slate-900">CalinS Meter</div>
+              <div className="text-xl font-bold text-slate-900">afmeter</div>
               <div className="text-xs text-slate-500">Smart Metering Solutions</div>
             </div>
           </Link>

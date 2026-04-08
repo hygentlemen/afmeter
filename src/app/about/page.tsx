@@ -22,7 +22,7 @@ export default function AboutPage() {
               <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Our Story</div>
               <h2 className="text-4xl font-extrabold text-slate-900 mb-6">From a Small Workshop to Global Leader</h2>
               <p className="text-slate-600 text-lg leading-relaxed mb-6">
-                Shenzhen CalinS Meter Co., Ltd. is a leading manufacturer of smart prepayment meters and AMI (Advanced Metering Infrastructure) solutions. Founded in 2003, we have grown from a small workshop to a global leader in smart metering solutions.
+                Shenzhen afmeter Co., Ltd. is a leading manufacturer of smart prepayment meters and AMI (Advanced Metering Infrastructure) solutions. Founded in 2003, we have grown from a small workshop to a global leader in smart metering solutions.
               </p>
               <p className="text-slate-600 text-lg leading-relaxed mb-8">
                 With over 15 years of experience, we specialize in electricity, water, and gas metering technologies, serving customers in 50+ countries across 6 continents.
@@ -92,10 +92,10 @@ export default function AboutPage() {
       <section className="py-20 px-8 bg-slate-50">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Why CalinS</div>
+            <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Why afmeter</div>
             <h2 className="text-4xl font-extrabold text-slate-900 mb-4">Industry-Leading Smart Metering Solutions</h2>
             <p className="text-lg text-slate-500 max-w-2xl mx-auto">
-              With over 15 years of experience in smart metering, CalinS Meter delivers reliable, certified, and innovative solutions to utilities and municipalities worldwide.
+              With over 15 years of experience in smart metering, afmeter delivers reliable, certified, and innovative solutions to utilities and municipalities worldwide.
             </p>
           </div>
 

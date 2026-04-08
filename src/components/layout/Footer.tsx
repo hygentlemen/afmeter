@@ -12,7 +12,7 @@ export function Footer() {
                 CM
               </div>
               <div>
-                <div className="text-2xl font-bold text-white">CalinS Meter</div>
+                <div className="text-2xl font-bold text-white">afmeter</div>
               </div>
             </div>
             <p className="text-slate-400 leading-relaxed mb-6 max-w-md">
@@ -22,7 +22,7 @@ export function Footer() {
               <a href="#" className="w-11 h-11 bg-slate-800 hover:bg-sky-600 rounded-lg flex items-center justify-center text-slate-400 hover:text-white transition-all">
                 f
               </a>
-              <a href="#" className="w-11 h-11 bg-slate-800 hover:bg-sky-600 rounded-lg flex items-center justify-center text-slate-400 hover:text-white transition-all">
+              <a href="https://www.linkedin.com/in/qiscott/" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-slate-800 hover:bg-sky-600 rounded-lg flex items-center justify-center text-slate-400 hover:text-white transition-all">
                 in
               </a>
               <a href="#" className="w-11 h-11 bg-slate-800 hover:bg-sky-600 rounded-lg flex items-center justify-center text-slate-400 hover:text-white transition-all">
@@ -73,7 +73,7 @@ export function Footer() {
         {/* Contact Info */}
         <div className="pt-8 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="text-slate-500 text-sm">
-            Copyright © 2026 CalinS Meter. All rights reserved.
+            Copyright © 2026 afmeter. All rights reserved.
           </div>
           <div className="flex gap-6 text-sm">
             <a href="#" className="text-slate-500 hover:text-sky-400 transition-colors">
