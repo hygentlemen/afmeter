@@ -30,6 +30,9 @@ export function Header() {
             <Link href="/about" className="text-slate-600 font-medium hover:text-sky-500 transition-colors">
               About Us
             </Link>
+            <Link href="/blog" className="text-slate-600 font-medium hover:text-sky-500 transition-colors">
+              Blog
+            </Link>
             <Link href="/contact" className="text-slate-600 font-medium hover:text-sky-500 transition-colors">
               Contact
             </Link>
