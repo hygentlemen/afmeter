@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - STS Prepaid Gas Meters | Diaphragm & Temperature Compensation",
+  description: "afmeter's STS prepaid gas meters feature diaphragm technology, temperature compensation, magnetic field protection, and CIU options. Perfect for residential, commercial, and industrial gas metering applications.",
+  keywords: "STS prepaid gas meter, diaphragm gas meter, smart gas meter, temperature compensation, anti-tampering",
+};
 
 export default function GasMeterPage() {
   return (

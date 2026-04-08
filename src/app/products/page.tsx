@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - Smart Metering Solutions | STS Prepaid Meters, AMI Systems",
+  description: "afmeter offers STS compliant prepaid energy meters, water meters, gas meters, and advanced AMI systems for global markets. 15+ years of excellence in smart metering solutions.",
+  keywords: "STS prepaid meter, energy meter, water meter, gas meter, AMI system, smart metering, Nigeria, Mali, Somaliland",
+};
 
 export default function ProductsPage() {
   return (

@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - STS Prepaid Water Meters | Multi-Jet & Ultrasonic",
+  description: "afmeter's STS prepaid water meters feature multi-jet and ultrasonic technology with IP67/IP68 protection, 10-year battery life, and advanced NRW reduction capabilities. Ideal for residential, commercial, and district metering.",
+  keywords: "STS prepaid water meter, multi-jet water meter, ultrasonic water meter, NRW reduction, smart water meter, IP68",
+};
 
 export default function WaterMeterPage() {
   return (

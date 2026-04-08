@@ -1,4 +1,11 @@
 import Link from "next/link";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "afmeter - STS Prepaid Energy Meters | Single Phase & Three Phase",
+  description: "afmeter's STS prepaid energy meters include single-phase and three-phase smart electricity meters with keypad, LoRaWAN, GPRS, and DLMS/COSEM compliance. Perfect for residential, commercial, and industrial applications.",
+  keywords: "STS prepaid energy meter, single phase meter, three phase meter, smart electricity meter, keypad prepayment, AMI system",
+};
 
 export default function EnergyMeterPage() {
   return (
