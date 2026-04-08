@@ -2,6 +2,7 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 
+// Trigger new deployment
 export const metadata: Metadata = {
   title: "afmeter Blog - Smart Metering Industry Insights & Guides",
   description: "afmeter blog shares insights on smart metering, STS prepaid meters, AMI systems, and market trends in Africa and beyond.",
