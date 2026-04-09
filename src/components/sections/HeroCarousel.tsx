@@ -65,22 +65,26 @@ export function HeroCarousel() {
             className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${slide.image})` }}
           >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent" />
+            {/* Overlay - lighter for product slide */}
+            {index === 0 ? (
+              <div className="absolute inset-0 bg-gradient-to-r from-slate-100/50 via-slate-100/30 to-transparent" />
+            ) : (
+              <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent" />
+            )}
           </div>
 
           {/* Content */}
           <div className="relative h-full max-w-7xl mx-auto px-8 flex items-center">
-            <div className="max-w-2xl text-white">
+            <div className={`max-w-2xl ${index === 0 ? 'text-slate-900' : 'text-white'}`}>
               <h1 className="text-5xl font-extrabold mb-6 leading-tight">
                 {slide.title}
               </h1>
-              <p className="text-xl opacity-90 mb-10 leading-relaxed">
+              <p className={`text-xl opacity-90 mb-10 leading-relaxed ${index === 0 ? 'text-slate-700' : 'text-white'}`}>
                 {slide.subtitle}
               </p>
               <a
                 href={slide.ctaLink}
-                className="inline-flex items-center gap-3 bg-sky-500 hover:bg-sky-600 text-white px-10 py-5 rounded-xl font-bold text-lg transition-colors"
+                className={`inline-flex items-center gap-3 px-10 py-5 rounded-xl font-bold text-lg transition-colors ${index === 0 ? 'bg-sky-500 hover:bg-sky-600 text-white' : 'bg-sky-500 hover:bg-sky-600 text-white'}`}
               >
                 {slide.cta}
                 <span className="text-xl">→</span>
