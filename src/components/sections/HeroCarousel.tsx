@@ -67,41 +67,41 @@ export function HeroCarousel() {
               <div className="absolute inset-0 bg-slate-100">
                 {/* Product Grid */}
                 <div className="relative h-full max-w-7xl mx-auto px-8 flex items-center justify-center">
-                  <div className="flex items-center gap-12">
+                  <div className="flex items-center gap-24">
                     {/* Energy Meter */}
                     <div className="text-center">
-                      <div className="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center p-4">
+                      <div className="w-80 h-80 flex items-center justify-center">
                         <img
-                          src="/images/single-phase-1.jpg"
+                          src="/images/single-phase-1.png"
                           alt="Energy Meter"
-                          className="max-w-full max-h-full object-contain"
+                          className="max-w-full max-h-full object-contain shadow-2xl"
                         />
                       </div>
-                      <p className="mt-4 text-lg font-semibold text-slate-900">Energy Meter</p>
+                      <p className="mt-6 text-2xl font-semibold text-slate-900">Energy Meter</p>
                     </div>
 
                     {/* Water Meter */}
                     <div className="text-center">
-                      <div className="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center p-4">
+                      <div className="w-80 h-80 flex items-center justify-center">
                         <img
-                          src="/images/water-meter-1.jpg"
+                          src="/images/water-meter-1.png"
                           alt="Water Meter"
-                          className="max-w-full max-h-full object-contain"
+                          className="max-w-full max-h-full object-contain shadow-2xl"
                         />
                       </div>
-                      <p className="mt-4 text-lg font-semibold text-slate-900">Water Meter</p>
+                      <p className="mt-6 text-2xl font-semibold text-slate-900">Water Meter</p>
                     </div>
 
                     {/* Gas Meter */}
                     <div className="text-center">
-                      <div className="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center p-4">
+                      <div className="w-80 h-80 flex items-center justify-center">
                         <img
-                          src="/images/gas-meter-1.jpg"
+                          src="/images/gas-meter-1.png"
                           alt="Gas Meter"
-                          className="max-w-full max-h-full object-contain"
+                          className="max-w-full max-h-full object-contain shadow-2xl"
                         />
                       </div>
-                      <p className="mt-4 text-lg font-semibold text-slate-900">Gas Meter</p>
+                      <p className="mt-6 text-2xl font-semibold text-slate-900">Gas Meter</p>
                     </div>
                   </div>
 
