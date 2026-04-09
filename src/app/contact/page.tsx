@@ -78,9 +78,9 @@ export default function ContactPage() {
               <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Send a Message</div>
               <h2 className="text-4xl font-extrabold text-slate-900 mb-8">Get a Free Quote</h2>
               
-              {/* Formspree Form - Replace YOUR_FORMSPREE_ID with your actual form ID */}
+              {/* Formspree Form */}
               <form 
-                action="https://formspree.io/f/YOUR_FORMSPREE_ID" 
+                action="https://formspree.io/f/xnjoyglp" 
                 method="POST"
                 className="space-y-6"
               >
