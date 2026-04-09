@@ -78,12 +78,19 @@ export default function ContactPage() {
               <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Send a Message</div>
               <h2 className="text-4xl font-extrabold text-slate-900 mb-8">Get a Free Quote</h2>
               
-              <form className="space-y-6">
+              {/* Formspree Form - Replace YOUR_FORMSPREE_ID with your actual form ID */}
+              <form 
+                action="https://formspree.io/f/YOUR_FORMSPREE_ID" 
+                method="POST"
+                className="space-y-6"
+              >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
                     <label className="block text-slate-700 font-medium mb-3">First Name</label>
                     <input 
                       type="text" 
+                      name="firstName"
+                      required
                       className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all"
                       placeholder="Your first name"
                     />
@@ -92,6 +99,8 @@ export default function ContactPage() {
                     <label className="block text-slate-700 font-medium mb-3">Last Name</label>
                     <input 
                       type="text" 
+                      name="lastName"
+                      required
                       className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all"
                       placeholder="Your last name"
                     />
@@ -102,6 +111,8 @@ export default function ContactPage() {
                   <label className="block text-slate-700 font-medium mb-3">Email</label>
                   <input 
                     type="email" 
+                    name="email"
+                    required
                     className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all"
                     placeholder="your@email.com"
                   />
@@ -111,6 +122,7 @@ export default function ContactPage() {
                   <label className="block text-slate-700 font-medium mb-3">Company</label>
                   <input 
                     type="text" 
+                    name="company"
                     className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all"
                     placeholder="Your company name"
                   />
@@ -119,6 +131,8 @@ export default function ContactPage() {
                 <div>
                   <label className="block text-slate-700 font-medium mb-3">Message</label>
                   <textarea 
+                    name="message"
+                    required
                     rows={5}
                     className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all resize-none"
                     placeholder="Tell us about your project..."
