@@ -72,7 +72,7 @@ export function HeroCarousel() {
                     <div className="text-center">
                       <div className="w-80 h-80 flex items-center justify-center">
                         <img
-                          src="/images/single-phase-1.png"
+                          src="/images/single-phase-1.webp"
                           alt="Energy Meter"
                           className="max-w-full max-h-full object-contain shadow-2xl"
                         />
@@ -84,7 +84,7 @@ export function HeroCarousel() {
                     <div className="text-center">
                       <div className="w-80 h-80 flex items-center justify-center">
                         <img
-                          src="/images/water-meter-1.png"
+                          src="/images/water-meter-1.webp"
                           alt="Water Meter"
                           className="max-w-full max-h-full object-contain shadow-2xl"
                         />
@@ -96,7 +96,7 @@ export function HeroCarousel() {
                     <div className="text-center">
                       <div className="w-80 h-80 flex items-center justify-center">
                         <img
-                          src="/images/gas-meter-1.png"
+                          src="/images/gas-meter-1.webp"
                           alt="Gas Meter"
                           className="max-w-full max-h-full object-contain shadow-2xl"
                         />
