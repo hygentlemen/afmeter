@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 const slides = [
   {
-    type: 'products',
+    image: '/images/hero-products.jpg',
     title: 'Complete Metering Solutions',
     subtitle: 'Energy, Water, and Gas Meters - All in One Place',
     cta: 'Explore Products',
@@ -60,101 +60,33 @@ export function HeroCarousel() {
             index === currentSlide ? 'opacity-100' : 'opacity-0'
           }`}
         >
-          {/* Products Slide */}
-          {slide.type === 'products' ? (
-            <>
-              {/* Light Gray Background */}
-              <div className="absolute inset-0 bg-slate-100">
-                {/* Product Grid */}
-                <div className="relative h-full max-w-7xl mx-auto px-8 flex items-center justify-center">
-                  <div className="flex items-center gap-12">
-                    {/* Energy Meter */}
-                    <div className="text-center">
-                      <div className="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center p-4">
-                        <img
-                          src="/images/single-phase-1.jpg"
-                          alt="Energy Meter"
-                          className="max-w-full max-h-full object-contain"
-                        />
-                      </div>
-                      <p className="mt-4 text-lg font-semibold text-slate-900">Energy Meter</p>
-                    </div>
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 bg-cover bg-center"
+            style={{ backgroundImage: `url(${slide.image})` }}
+          >
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent" />
+          </div>
 
-                    {/* Water Meter */}
-                    <div className="text-center">
-                      <div className="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center p-4">
-                        <img
-                          src="/images/water-meter-1.jpg"
-                          alt="Water Meter"
-                          className="max-w-full max-h-full object-contain"
-                        />
-                      </div>
-                      <p className="mt-4 text-lg font-semibold text-slate-900">Water Meter</p>
-                    </div>
-
-                    {/* Gas Meter */}
-                    <div className="text-center">
-                      <div className="w-64 h-64 bg-white rounded-2xl shadow-lg flex items-center justify-center p-4">
-                        <img
-                          src="/images/gas-meter-1.jpg"
-                          alt="Gas Meter"
-                          className="max-w-full max-h-full object-contain"
-                        />
-                      </div>
-                      <p className="mt-4 text-lg font-semibold text-slate-900">Gas Meter</p>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="absolute left-8 max-w-2xl">
-                    <h1 className="text-5xl font-extrabold mb-6 leading-tight text-slate-900">
-                      {slide.title}
-                    </h1>
-                    <p className="text-xl opacity-90 mb-10 leading-relaxed text-slate-700">
-                      {slide.subtitle}
-                    </p>
-                    <a
-                      href={slide.ctaLink}
-                      className="inline-flex items-center gap-3 bg-sky-500 hover:bg-sky-600 text-white px-10 py-5 rounded-xl font-bold text-lg transition-colors"
-                    >
-                      {slide.cta}
-                      <span className="text-xl">→</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </>
-          ) : (
-            <>
-              {/* Background Image Slide */}
-              <div
-                className="absolute inset-0 bg-cover bg-center"
-                style={{ backgroundImage: `url(${slide.image})` }}
+          {/* Content */}
+          <div className="relative h-full max-w-7xl mx-auto px-8 flex items-center">
+            <div className="max-w-2xl text-white">
+              <h1 className="text-5xl font-extrabold mb-6 leading-tight">
+                {slide.title}
+              </h1>
+              <p className="text-xl opacity-90 mb-10 leading-relaxed">
+                {slide.subtitle}
+              </p>
+              <a
+                href={slide.ctaLink}
+                className="inline-flex items-center gap-3 bg-sky-500 hover:bg-sky-600 text-white px-10 py-5 rounded-xl font-bold text-lg transition-colors"
               >
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-r from-slate-900/90 via-slate-900/70 to-transparent" />
-              </div>
-
-              {/* Content */}
-              <div className="relative h-full max-w-7xl mx-auto px-8 flex items-center">
-                <div className="max-w-2xl text-white">
-                  <h1 className="text-5xl font-extrabold mb-6 leading-tight">
-                    {slide.title}
-                  </h1>
-                  <p className="text-xl opacity-90 mb-10 leading-relaxed">
-                    {slide.subtitle}
-                  </p>
-                  <a
-                    href={slide.ctaLink}
-                    className="inline-flex items-center gap-3 bg-sky-500 hover:bg-sky-600 text-white px-10 py-5 rounded-xl font-bold text-lg transition-colors"
-                  >
-                    {slide.cta}
-                    <span className="text-xl">→</span>
-                  </a>
-                </div>
-              </div>
-            </>
-          )}
+                {slide.cta}
+                <span className="text-xl">→</span>
+              </a>
+            </div>
+          </div>
         </div>
       ))}
 
