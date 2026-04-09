@@ -15,7 +15,48 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <>
+      {/* Schema.org Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "afmeter",
+            "alternateName": "AFC Meters",
+            "url": "https://www.afmeter.com",
+            "logo": "https://www.afmeter.com/logo.png",
+            "description": "Leading manufacturer of STS prepaid smart meters, AMI systems, and metering solutions. 15+ years experience, 500K+ meters deployed in 50+ countries worldwide.",
+            "contactPoint": {
+              "@type": "ContactPoint",
+              "telephone": "+86 13562505474",
+              "contactType": "customer service",
+              "email": "info@afmeter.com"
+            },
+            "sameAs": [
+              "https://www.linkedin.com/in/qiscott/"
+            ]
+          })
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "afmeter",
+            "url": "https://www.afmeter.com",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://www.afmeter.com/search?q={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          })
+        }}
+      />
+      <main className="min-h-screen">
       {/* Hero Carousel */}
       <HeroCarousel />
 
@@ -153,5 +194,6 @@ export default function Home() {
         </div>
       </section>
     </main>
+    </>
   );
 }
