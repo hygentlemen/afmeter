@@ -19,6 +19,17 @@ export const metadata: Metadata = {
   title: "afmeter - Smart Metering Solutions",
   description: "Leading manufacturer of STS prepaid energy meters, water meters and gas meters. 500,000+ meters deployed worldwide.",
   keywords: "STS prepaid meter, energy meter, water meter, gas meter, smart metering, AMI system",
+  openGraph: {
+    title: "afmeter - Smart Metering Solutions",
+    description: "Leading manufacturer of STS prepaid energy meters, water meters and gas meters. 500,000+ meters deployed worldwide.",
+    images: ["/og-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "afmeter - Smart Metering Solutions",
+    description: "Leading manufacturer of STS prepaid energy meters, water meters and gas meters. 500,000+ meters deployed worldwide.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function RootLayout({
