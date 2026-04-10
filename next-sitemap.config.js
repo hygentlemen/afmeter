@@ -3,5 +3,4 @@
 module.exports = {
   siteUrl: 'https://www.afmeter.com',
   generateRobotsTxt: true,
-  outDir: 'out',
 };
