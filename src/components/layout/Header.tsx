@@ -7,9 +7,11 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-gradient-to-br from-sky-500 to-blue-600 rounded-xl flex items-center justify-center text-white text-2xl font-bold">
-              AM
-            </div>
+            <img
+              src="/logo.png"
+              alt="afmeter Logo"
+              className="w-12 h-12 object-contain"
+            />
             <div>
               <div className="text-xl font-bold text-slate-900">afmeter</div>
               <div className="text-xs text-slate-500">Smart Metering Solutions</div>
