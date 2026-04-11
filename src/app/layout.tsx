@@ -22,13 +22,13 @@ export const metadata: Metadata = {
   openGraph: {
     title: "afmeter - Smart Metering Solutions",
     description: "Leading manufacturer of STS prepaid energy meters, water meters and gas meters. 500,000+ meters deployed worldwide.",
-    images: ["/og-image.png"],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "afmeter Logo" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "afmeter - Smart Metering Solutions",
     description: "Leading manufacturer of STS prepaid energy meters, water meters and gas meters. 500,000+ meters deployed worldwide.",
-    images: ["/og-image.png"],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "afmeter Logo" }],
   },
 };
 
