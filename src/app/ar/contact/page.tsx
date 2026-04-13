@@ -86,27 +86,6 @@ export default function ContactPage() {
                 action="https://formspree.io/f/xnjoyglp" 
                 method="POST"
                 className="space-y-6"
-                onSubmit={(e) => {
-                  const form = e.currentTarget;
-                  const requiredFields = form.querySelectorAll('[required]');
-                  for (let field of requiredFields) {
-                    if (!field.value.trim()) {
-                      e.preventDefault();
-                      (field as HTMLElement).focus();
-                      alert('This field is required');
-                      return;
-                    }
-                    if (field.getAttribute('type') === 'email' && field.value) {
-                      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-                      if (!emailRegex.test(field.value)) {
-                        e.preventDefault();
-                        (field as HTMLElement).focus();
-                        alert('Please enter a valid email address');
-                        return;
-                      }
-                    }
-                  }
-                }}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
@@ -201,5 +180,30 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
+    <script
+      dangerouslySetInnerHTML={{
+        __html: `
+          (function() {
+            const form = document.querySelector('form[action*="formspree"]');
+            if (!form) return;
+            
+            const requiredFields = form.querySelectorAll('[required]');
+            requiredFields.forEach(field => {
+              field.addEventListener('invalid', function(e) {
+                e.preventDefault();
+                if (this.type === 'email') {
+                  this.setCustomValidity(!this.value.trim() ? 'This field is required' : 'Please enter a valid email address');
+                } else {
+                  this.setCustomValidity('This field is required');
+                }
+              });
+              field.addEventListener('input', function() {
+                this.setCustomValidity('');
+              });
+            });
+          })();
+        `,
+      }}
+    />
   );
 }
