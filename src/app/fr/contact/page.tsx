@@ -190,14 +190,15 @@ export default function ContactPage() {
           
           const requiredFields = form.querySelectorAll('[required]');
           requiredFields.forEach(field => {
+            // Set custom validity messages
             field.addEventListener('invalid', function(e) {
-              e.preventDefault();
-              if (this.type === 'email') {
-                this.setCustomValidity(!this.value.trim() ? 'This field is required' : 'Please enter a valid email address');
-              } else {
+              if (this.validity.valueMissing) {
                 this.setCustomValidity('This field is required');
+              } else if (this.type === 'email' && this.validity.typeMismatch) {
+                this.setCustomValidity('Please enter a valid email address');
               }
             });
+            // Clear custom validity on input
             field.addEventListener('input', function() {
               this.setCustomValidity('');
             });
