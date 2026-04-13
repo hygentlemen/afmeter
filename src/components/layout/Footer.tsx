@@ -1,6 +1,29 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export function Footer() {
+  const pathname = usePathname();
+
+  // Detect current locale from pathname
+  const getCurrentLocale = () => {
+    if (pathname.startsWith("/fr")) return "fr";
+    if (pathname.startsWith("/ar")) return "ar";
+    if (pathname.startsWith("/en")) return "en";
+    return "en"; // default to English
+  };
+
+  const currentLocale = getCurrentLocale();
+
+  // Create link with current locale
+  const getLocalizedPath = (path: string) => {
+    if (currentLocale === "en") {
+      return path; // English uses root path
+    }
+    return `/${currentLocale}${path}`;
+  };
+
   return (
     <footer className="bg-slate-900 text-slate-300 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-8 py-16">
@@ -35,16 +58,16 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-6 text-lg">Products</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="/products/energy" className="text-slate-400 hover:text-sky-400 transition-colors">
+              <Link href={getLocalizedPath("/products/energy")} className="text-slate-400 hover:text-sky-400 transition-colors">
                 Energy Meters
               </Link>
-              <Link href="/products/water" className="text-slate-400 hover:text-sky-400 transition-colors">
+              <Link href={getLocalizedPath("/products/water")} className="text-slate-400 hover:text-sky-400 transition-colors">
                 Water Meters
               </Link>
-              <Link href="/products/gas" className="text-slate-400 hover:text-sky-400 transition-colors">
+              <Link href={getLocalizedPath("/products/gas")} className="text-slate-400 hover:text-sky-400 transition-colors">
                 Gas Meters
               </Link>
-              <Link href="/products" className="text-slate-400 hover:text-sky-400 transition-colors">
+              <Link href={getLocalizedPath("/products")} className="text-slate-400 hover:text-sky-400 transition-colors">
                 AMI Systems
               </Link>
             </nav>
@@ -54,16 +77,16 @@ export function Footer() {
           <div>
             <h4 className="text-white font-semibold mb-6 text-lg">Company</h4>
             <nav className="flex flex-col gap-3">
-              <Link href="/about" className="text-slate-400 hover:text-sky-400 transition-colors">
+              <Link href={getLocalizedPath("/about")} className="text-slate-400 hover:text-sky-400 transition-colors">
                 About Us
               </Link>
-              <Link href="/projects/mali" className="text-slate-400 hover:text-sky-400 transition-colors">
+              <Link href={getLocalizedPath("/projects/mali")} className="text-slate-400 hover:text-sky-400 transition-colors">
                 Mali Project
               </Link>
-              <Link href="/projects/nigeria" className="text-slate-400 hover:text-sky-400 transition-colors">
+              <Link href={getLocalizedPath("/projects/nigeria")} className="text-slate-400 hover:text-sky-400 transition-colors">
                 Nigeria Project
               </Link>
-              <Link href="/projects/somaliland" className="text-slate-400 hover:text-sky-400 transition-colors">
+              <Link href={getLocalizedPath("/projects/somaliland")} className="text-slate-400 hover:text-sky-400 transition-colors">
                 Somaliland Project
               </Link>
             </nav>
