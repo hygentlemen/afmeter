@@ -1,22 +1,25 @@
-import Link from "next/link";
-import type { Metadata } from "next";
+"use client";
 
-export const metadata: Metadata = {
-  title: "afmeter - Contact Us | Get a Quote for Smart Meters",
-  description: "Contact afmeter for STS prepaid meters, AMI systems, and smart metering solutions. Get a quote for your project. Email: info@afmeter.com",
-  keywords: "contact smart meter supplier, get quote prepaid meter, AMI system inquiry, smart metering solutions contact",
-};
+import Link from "next/link";
+import { useParams } from "next/navigation";
 
 export default function ContactPage() {
+  const params = useParams();
+  const currentLocale = "fr";
+
+  const getLocalizedPath = (path: string) => {
+    return `/${currentLocale}${path}`;
+  };
+
   return (
     <main>
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white py-24 px-8">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="text-sky-400 font-bold text-sm tracking-widest uppercase mb-4">Contact Us</div>
-          <h1 className="text-5xl font-extrabold mb-6 leading-tight">Get in Touch</h1>
+          <div className="text-sky-400 font-bold text-sm tracking-widest uppercase mb-4">Contactez-nous</div>
+          <h1 className="text-5xl font-extrabold mb-6 leading-tight">Entrez en contact</h1>
           <p className="text-xl opacity-90 leading-relaxed">
-            Ready to upgrade your metering system? Our team of experts is here to help you from specification to deployment.
+            Prêt à mettre à niveau votre système de comptage ? Notre équipe d'experts est là pour vous aider de la spécification au déploiement.
           </p>
         </div>
       </section>
@@ -27,8 +30,8 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
             {/* Contact Info */}
             <div>
-              <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Reach Out</div>
-              <h2 className="text-4xl font-extrabold text-slate-900 mb-8">Contact Information</h2>
+              <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Contactez-nous</div>
+              <h2 className="text-4xl font-extrabold text-slate-900 mb-8">Informations de contact</h2>
               
               <div className="space-y-8">
                 <div className="flex gap-6">
@@ -46,7 +49,7 @@ export default function ContactPage() {
                     📱
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">Phone</h3>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Téléphone</h3>
                     <p className="text-slate-600 text-lg">+86 13562505474</p>
                   </div>
                 </div>
@@ -56,8 +59,8 @@ export default function ContactPage() {
                     📍
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">Location</h3>
-                    <p className="text-slate-600 text-lg">Shenzhen, China</p>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Emplacement</h3>
+                    <p className="text-slate-600 text-lg">Shenzhen, Chine</p>
                   </div>
                 </div>
 
@@ -66,8 +69,8 @@ export default function ContactPage() {
                     🏭
                   </div>
                   <div>
-                    <h3 className="text-lg font-bold text-slate-900 mb-2">Manufacturing Facility</h3>
-                    <p className="text-slate-600 text-lg">20,000+ sqm Production Base</p>
+                    <h3 className="text-lg font-bold text-slate-900 mb-2">Installation de fabrication</h3>
+                    <p className="text-slate-600 text-lg">Base de production 20,000+ m²</p>
                   </div>
                 </div>
               </div>
@@ -75,8 +78,8 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <div>
-              <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Send a Message</div>
-              <h2 className="text-4xl font-extrabold text-slate-900 mb-8">Get a Free Quote</h2>
+              <div className="text-sky-500 font-bold text-sm tracking-widest uppercase mb-3">Envoyer un message</div>
+              <h2 className="text-4xl font-extrabold text-slate-900 mb-8">Obtenir un devis gratuit</h2>
               
               {/* Formspree Form */}
               <form 
@@ -86,23 +89,23 @@ export default function ContactPage() {
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-slate-700 font-medium mb-3">First Name</label>
+                    <label className="block text-slate-700 font-medium mb-3">Prénom</label>
                     <input 
                       type="text" 
                       name="firstName"
                       required
                       className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all"
-                      placeholder="Your first name"
+                      placeholder="Votre prénom"
                     />
                   </div>
                   <div>
-                    <label className="block text-slate-700 font-medium mb-3">Last Name</label>
+                    <label className="block text-slate-700 font-medium mb-3">Nom de famille</label>
                     <input 
                       type="text" 
                       name="lastName"
                       required
                       className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all"
-                      placeholder="Your last name"
+                      placeholder="Votre nom de famille"
                     />
                   </div>
                 </div>
@@ -114,17 +117,17 @@ export default function ContactPage() {
                     name="email"
                     required
                     className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all"
-                    placeholder="your@email.com"
+                    placeholder="votre@email.com"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-slate-700 font-medium mb-3">Company</label>
+                  <label className="block text-slate-700 font-medium mb-3">Entreprise</label>
                   <input 
                     type="text" 
                     name="company"
                     className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all"
-                    placeholder="Your company name"
+                    placeholder="Le nom de votre entreprise"
                   />
                 </div>
 
@@ -135,7 +138,7 @@ export default function ContactPage() {
                     required
                     rows={5}
                     className="w-full px-5 py-4 border border-slate-200 rounded-xl focus:border-sky-500 focus:ring-2 focus:ring-sky-500/20 outline-none transition-all resize-none"
-                    placeholder="Tell us about your project..."
+                    placeholder="Parlez-nous de votre projet..."
                   />
                 </div>
 
@@ -143,7 +146,7 @@ export default function ContactPage() {
                   type="submit"
                   className="w-full bg-sky-500 hover:bg-sky-600 text-white px-8 py-5 font-bold text-lg rounded-xl transition-all"
                 >
-                  Send Message
+                  Envoyer le message
                 </button>
               </form>
             </div>
@@ -154,9 +157,9 @@ export default function ContactPage() {
       {/* Quick Contact */}
       <section className="py-16 px-8 bg-slate-50">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-extrabold text-slate-900 mb-6">Need Immediate Assistance?</h2>
+          <h2 className="text-3xl font-extrabold text-slate-900 mb-6">Besoin d'aide immédiate ?</h2>
           <p className="text-lg text-slate-600 mb-10">
-            Our team is available 24/7 for urgent inquiries and technical support.
+            Notre équipe est disponible 24/7 pour les demandes urgentes et le support technique.
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Link 
@@ -164,14 +167,14 @@ export default function ContactPage() {
               className="bg-sky-500 hover:bg-sky-600 text-white px-8 py-4 font-bold rounded-xl transition-all inline-flex items-center gap-3"
             >
               <span>📧</span>
-              Email Us
+              Nous écrire
             </Link>
             <Link 
               href="tel:+8613562505474" 
               className="bg-white border-2 border-slate-200 hover:border-sky-500 text-slate-900 px-8 py-4 font-bold rounded-xl transition-all inline-flex items-center gap-3"
             >
               <span>📱</span>
-              Call Us
+              Nous appeler
             </Link>
           </div>
         </div>
