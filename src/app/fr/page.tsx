@@ -1,16 +1,3 @@
-import type { Metadata } from "next";
-
-export const metadata: Metadata = {
-  title: "afmeter - Compteurs intelligents prépayés STS | Compteurs d'énergie, d'eau et de gaz",
-  description: "afmeter est un fabricant leader de compteurs intelligents prépayés STS, de systèmes AMI et de solutions de comptage. Plus de 15 ans d'expérience, plus de 500 000 compteurs déployés dans plus de 50 pays à travers le monde.",
-  keywords: "compteur prépayé STS, compteur intelligent, compteur d'énergie, compteur d'eau, compteur de gaz, système AMI, compteur d'électricité prépayé, solutions de comptage intelligent, fournisseur de compteurs en Afrique",
-  openGraph: {
-    title: "afmeter - Compteurs intelligents prépayés STS | Compteurs d'énergie, d'eau et de gaz",
-    description: "Fabricant leader de compteurs intelligents prépayés STS, de systèmes AMI et de solutions de comptage. Plus de 15 ans d'expérience, plus de 500 000 compteurs déployés à travers le monde.",
-    type: "website",
-  },
-};
-
 "use client";
 
 import Link from "next/link";
