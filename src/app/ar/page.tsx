@@ -1,8 +1,3 @@
-"use client";
-
-import Link from "next/link";
-import { useParams } from "next/navigation";
-import { HeroCarousel } from "@/components/sections/HeroCarousel";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -15,6 +10,12 @@ export const metadata: Metadata = {
     type: "website",
   },
 };
+
+"use client";
+
+import Link from "next/link";
+import { useParams } from "next/navigation";
+import { HeroCarousel } from "@/components/sections/HeroCarousel";
 
 export default function Home() {
   const params = useParams();
