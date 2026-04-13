@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Script from "next/script";
 import { useParams } from "next/navigation";
 
 export default function ContactPage() {
@@ -180,30 +181,28 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
-    <script
-      dangerouslySetInnerHTML={{
-        __html: `
-          (function() {
-            const form = document.querySelector('form[action*="formspree"]');
-            if (!form) return;
-            
-            const requiredFields = form.querySelectorAll('[required]');
-            requiredFields.forEach(field => {
-              field.addEventListener('invalid', function(e) {
-                e.preventDefault();
-                if (this.type === 'email') {
-                  this.setCustomValidity(!this.value.trim() ? 'This field is required' : 'Please enter a valid email address');
-                } else {
-                  this.setCustomValidity('This field is required');
-                }
-              });
-              field.addEventListener('input', function() {
-                this.setCustomValidity('');
-              });
+    <Script id="contact-form-validation" strategy="afterInteractive">
+      {`
+        (function() {
+          const form = document.querySelector('form[action*="formspree"]');
+          if (!form) return;
+          
+          const requiredFields = form.querySelectorAll('[required]');
+          requiredFields.forEach(field => {
+            field.addEventListener('invalid', function(e) {
+              e.preventDefault();
+              if (this.type === 'email') {
+                this.setCustomValidity(!this.value.trim() ? 'This field is required' : 'Please enter a valid email address');
+              } else {
+                this.setCustomValidity('This field is required');
+              }
             });
-          })();
-        `,
-      }}
-    />
+            field.addEventListener('input', function() {
+              this.setCustomValidity('');
+            });
+          });
+        })();
+      `}
+    </Script>
   );
 }
