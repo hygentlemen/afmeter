@@ -86,10 +86,31 @@ export default function ContactPage() {
                 action="https://formspree.io/f/xnjoyglp" 
                 method="POST"
                 className="space-y-6"
+                onSubmit={(e) => {
+                  const form = e.currentTarget;
+                  const requiredFields = form.querySelectorAll('[required]');
+                  for (let field of requiredFields) {
+                    if (!field.value.trim()) {
+                      e.preventDefault();
+                      (field as HTMLElement).focus();
+                      alert('This field is required');
+                      return;
+                    }
+                    if (field.getAttribute('type') === 'email' && field.value) {
+                      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                      if (!emailRegex.test(field.value)) {
+                        e.preventDefault();
+                        (field as HTMLElement).focus();
+                        alert('Please enter a valid email address');
+                        return;
+                      }
+                    }
+                  }
+                }}
               >
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block text-slate-700 font-medium mb-3">الاسم الأول</label>
+                    <label className="block text-slate-700 font-medium mb-3">الاسم الأول <span className="text-red-500">*</span></label>
                     <input 
                       type="text" 
                       name="firstName"
@@ -99,7 +120,7 @@ export default function ContactPage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-slate-700 font-medium mb-3">اسم العائلة</label>
+                    <label className="block text-slate-700 font-medium mb-3">اسم العائلة <span className="text-red-500">*</span></label>
                     <input 
                       type="text" 
                       name="lastName"
@@ -111,7 +132,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-slate-700 font-medium mb-3">البريد الإلكتروني</label>
+                  <label className="block text-slate-700 font-medium mb-3">البريد الإلكتروني <span className="text-red-500">*</span></label>
                   <input 
                     type="email" 
                     name="email"
@@ -132,7 +153,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-slate-700 font-medium mb-3">الرسالة</label>
+                  <label className="block text-slate-700 font-medium mb-3">الرسالة <span className="text-red-500">*</span></label>
                   <textarea 
                     name="message"
                     required
