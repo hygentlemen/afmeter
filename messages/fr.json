@@ -1,0 +1,45 @@
+{
+  "Common": {
+    "home": "Accueil",
+    "products": "Produits",
+    "projects": "Projets",
+    "about": "À propos de nous",
+    "contact": "Contactez-nous",
+    "blog": "Blog",
+    "getQuote": "Obtenir un devis",
+    "learnMore": "En savoir plus",
+    "viewDetails": "Voir les détails"
+  },
+  "Hero": {
+    "tagline": "15+ ans d'expérience • 50+ pays • 500K+ compteurs",
+    "title": "Solutions de comptage intelligent pour un monde connecté",
+    "subtitle": "Compteurs prépayés conformes STS • Systèmes AMI • Déploiement mondial. Plus de 15 ans d'excellence dans les solutions de comptage intelligent pour l'énergie, l'eau et le gaz.",
+    "exploreProducts": "Explorer les produits",
+    "getQuote": "Obtenir un devis"
+  },
+  "Stats": {
+    "yearsExperience": "Années d'expérience",
+    "countries": "Pays",
+    "metersDeployed": "Compteurs déployés",
+    "continents": "Continents"
+  },
+  "Products": {
+    "title": "Nos produits",
+    "subtitle": "Solutions de comptage complètes",
+    "description": "Du résidentiel à l'industriel, nous fournissons des solutions de comptage intelligent pour chaque application",
+    "energyMeters": "Compteurs d'énergie",
+    "energyMetersDesc": "Électricité prépayée STS",
+    "waterMeters": "Compteurs d'eau",
+    "waterMetersDesc": "Prépayé STS & Ultrasonique",
+    "gasMeters": "Compteurs de gaz",
+    "gasMetersDesc": "Diaphragme prépayé STS"
+  },
+  "Footer": {
+    "companyName": "afmeter",
+    "description": "Fabricant leader de compteurs prépayés intelligents et de solutions AMI. Plus de 15 ans d'excellence dans les technologies de comptage d'énergie, d'eau et de gaz.",
+    "products": "Produits",
+    "company": "Entreprise",
+    "contact": "Contact",
+    "copyright": "Copyright © 2026 afmeter. Tous droits réservés."
+  }
+}
